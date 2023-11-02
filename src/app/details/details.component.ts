@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {ArtworkService} from '../artwork.service';
-import {WishlistService} from '../wishlist.service';
+import {ArtworkService} from '../../shared/services/artwork.service';
+import {WishlistService} from '../../shared/services/wishlist.service';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({selector: 'app-details', templateUrl: './details.component.html', styleUrls: ['./details.component.css']})

@@ -1,6 +1,6 @@
 import {Component, HostListener, OnInit} from '@angular/core';
-import {WishlistService} from '../wishlist.service';
-import {ArtworkService} from '../artwork.service';
+import {WishlistService} from '../../shared/services/wishlist.service';
+import {ArtworkService} from '../../shared/services/artwork.service';
 @Component({selector: 'app-wishlist', templateUrl: './wishlist.component.html', styleUrls: ['./wishlist.component.css']})
 export class WishlistComponent implements OnInit {
     wishlistItems : any[] = [];
