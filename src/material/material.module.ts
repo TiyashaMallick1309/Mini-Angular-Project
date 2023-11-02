@@ -1,27 +1,27 @@
 import {
-  NgModule
+    CUSTOM_ELEMENTS_SCHEMA, NgModule
 }
-  from '@angular/core';
+from '@angular/core';
 import {
-  CommonModule
+    CommonModule
 }
-  from '@angular/common';
+from '@angular/common';
 import {
-  BrowserModule
+    BrowserModule
 }
-  from '@angular/platform-browser';
+from '@angular/platform-browser';
 import {
-  HttpClientModule
+    HttpClientModule
 }
-  from '@angular/common/http';
+from '@angular/common/http';
 import {
-  FormsModule
+    FormsModule
 }
-  from '@angular/forms';
+from '@angular/forms';
 import {
-  AppRoutingModule
+    AppRoutingModule
 }
-  from 'src/app/app-routing.module';
+from 'src/app/app-routing.module';
 
 
-@NgModule({ declarations: [], imports: [CommonModule, BrowserModule, HttpClientModule, FormsModule, AppRoutingModule] }) export class MaterialModule { }
+@NgModule({ schemas: [CUSTOM_ELEMENTS_SCHEMA], declarations: [], imports: [CommonModule, BrowserModule, HttpClientModule, FormsModule, AppRoutingModule], exports: [CommonModule, BrowserModule, HttpClientModule, FormsModule, AppRoutingModule] }) export class MaterialModule {}
