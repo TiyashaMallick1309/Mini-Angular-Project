@@ -1,64 +1,58 @@
 /* Apply styles to the Home component */
 #home {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    background: url('https://www.artic.edu/iiif/2/237c25a2-6051-a8e7-1610-a01938d4deab/full/1686,/0/default.jpg') center/cover no-repeat;
-    color: #ffffff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 20px;
-  }
-  
-  /* Style the topbar */
-  .topbar {
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: background-color 0.3s;
-  }
-  
-  .topbar .logo {
-    max-width: 100px;
-  }
-  
-  .topbar .nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 20px;
-  }
-  
-  /* Style the text content on the Home component */
-  .text {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .text h1 {
-    font-size: 2rem;
-    margin: 0;
-    padding: 10px;
-  }
-  
-  .text p {
-    font-size: 1.2rem;
-    margin: 0;
-    padding: 10px;
-  }
-  
-  /* Style the topbar when scrolled
-  .topbar.hidden {
-    background: rgba(0, 0, 0, 0.8);
-  } */
-  
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url('https://www.artic.edu/iiif/2/237c25a2-6051-a8e7-1610-a01938d4deab/full/1686,/0/default.jpg') center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+/* Style the topbar */
+.topbar {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: background-color 0.3s;
+}
+
+.topbar .logo {
+  max-width: 100px;
+}
+
+.topbar .nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+
+/* Style the text content on the Home component */
+.text {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.text h1 {
+  font-size: 2rem;
+  margin: 0;
+  padding: 10px;
+}
+
+.text p {
+  font-size: 1.2rem;
+  margin: 0;
+  padding: 10px;
+}
