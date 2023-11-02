@@ -1,21 +1,27 @@
 <!-- Topbar -->
 <div class="topbar">
+  <!-- Art Institute Logo -->
   <a href="index.html"><img src="https://www.imaging4art.com/wp-content/uploads/2014/10/AIC_Logo_Red_3001.jpg"
       alt="Art Institute Logo" class="logo" /></a>
+  <!-- Navigation for Home and Wishlist using Angular Router -->
   <div class="nav">
     <a routerLink="/home">Home</a>
     <a routerLink="/wishlist">Wishlist</a>
   </div>
 </div>
+<!-- Artwork Details Section - Uses ngIf to display only when there is an artwork selected -->
 <div class="artwork-details" *ngIf="artwork">
+  <!-- Artwork image -->
   <div class="artwork-image">
     <img [src]="artworkService.getImageUrl(artwork.image_id)" alt="{{ artwork.title }}" />
   </div>
+  <!-- Artwork information -->
   <div class="artwork-info">
     <h1>{{ artwork.title }}</h1>
     <p>Artist: <b>{{ artwork.artist_title }}</b></p>
     <p>{{ artwork.medium }}</p>
     <p>{{ artwork.description }}</p>
   </div>
+  <!-- Button to add artwork to the user's wishlist -->
   <button (click)="addToWishlist(artwork)" class="add-to-wishlist-button">Add to Wishlist</button>
 </div>

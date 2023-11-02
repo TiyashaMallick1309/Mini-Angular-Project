@@ -9,15 +9,16 @@ export class DetailsComponent {
 
     constructor(public artworkService : ArtworkService, private wishlistService : WishlistService, private route : ActivatedRoute) {}
 
-    ngOnInit(): void { // Retrieve the artwork id
+    // Retrieve the artwork id
+    ngOnInit(): void {
         const artworkIdParam = this.route.snapshot.paramMap.get('id');
         // Retrieve artwork details from your service or API.
         if (artworkIdParam !== null) {
             const artworkId = + artworkIdParam;
             console.log(artworkId);
-            if (!isNaN(artworkId)) {
-                this.artworkService.getArtworkById(artworkId).subscribe((res:any)=>{
-                    this.artwork=res.data;
+            if (!isNaN(artworkId)) { // Call the getArtworkById() method from the artwork service to retrieve artwork details
+                this.artworkService.getArtworkById(artworkId).subscribe((res : any) => {
+                    this.artwork = res.data;
                 })
             } else {
                 console.error("Invalid artwork ID");
