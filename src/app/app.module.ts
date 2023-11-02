@@ -4,7 +4,7 @@ import {HomeComponent} from './home/home.component';
 import {ArtworksComponent} from './artworks/artworks.component';
 import {DetailsComponent} from './details/details.component';
 import {WishlistComponent} from './wishlist/wishlist.component';
-import { MaterialModule } from 'src/material/material.module';
+import {MaterialModule} from 'src/material/material.module';
 
 @NgModule({
     declarations: [
@@ -14,7 +14,7 @@ import { MaterialModule } from 'src/material/material.module';
         DetailsComponent,
         WishlistComponent
     ],
-    imports: [ MaterialModule],
+    imports: [MaterialModule],
     providers: [],
     bootstrap: [AppComponent]
 })

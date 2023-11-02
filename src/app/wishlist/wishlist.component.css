@@ -15,7 +15,6 @@
 
 /* Style the wishlist cards */
 .wishlist-card {
-  /* flex-basis: calc(25% - 20px); */
   width: 15rem;
   margin: 2rem;
   border: 0.2rem solid #ccc;

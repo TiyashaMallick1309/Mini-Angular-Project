@@ -7,10 +7,12 @@ export class WishlistService {
 
     wishlistItems : any[] = [];
 
+    // Adding item to wishlist
     addToWishlist(item : any) {
         this.wishlistItems.push(item);
     }
 
+    // Method to remove item from wishlist
     removeFromWishlist(item : any) {
         const index = this.wishlistItems.findIndex((i) => i.id === item.id);
         if (index !== -1) {
@@ -18,9 +20,11 @@ export class WishlistService {
         }
     }
 
-    clearWishList() { // Clear the wishlist
+    // Clear the wishlist
+    clearWishList() {
         this.wishlistItems = [];
     }
+
     // Get the wishlist items
     getWishlistItems(): any[]{
         return this.wishlistItems;

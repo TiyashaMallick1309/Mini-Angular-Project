@@ -1,18 +1,22 @@
 <div class="wishlist">
   <!-- Topbar -->
   <div class="topbar">
-    <a href="index.html"><img src="https://www.imaging4art.com/wp-content/uploads/2014/10/AIC_Logo_Red_3001.jpg" alt="Art Institute Logo" class="logo" /></a>
+    <a href="index.html"><img src="https://www.imaging4art.com/wp-content/uploads/2014/10/AIC_Logo_Red_3001.jpg"
+        alt="Art Institute Logo" class="logo" /></a>
     <div class="nav">
       <a routerLink="/home">Home</a>
       <a routerLink="/wishlist">Wishlist</a>
     </div>
   </div>
+
+  <!--Heading-->
   <div class="head">
     <h2>Your Wishlist</h2>
     <div *ngIf="wishlistItems.length>0" class="empty">
       <button (click)="clearWishlist()">Empty Wishlist</button>
     </div>
   </div>
+  <!--Wishlist items display-->
   <div *ngIf="wishlistItems.length>0" class="wishlist-items">
     <div *ngFor="let item of wishlistService.wishlistItems" class="wishlist-card">
       <img [src]="artworkService.getImageUrl(item.image_id)" alt="{{ item.title }}" />
@@ -26,4 +30,3 @@
   <div *ngIf="wishlistItems.length===0" class="empty-wishlist">
     <p>Your Wishlist is empty</p>
   </div>
-</div>

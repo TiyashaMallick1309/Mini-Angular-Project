@@ -5,7 +5,7 @@ import {WishlistComponent} from './wishlist/wishlist.component';
 import {DetailsComponent} from './details/details.component';
 import {HomeComponent} from './home/home.component';
 
-
+//Routes
 const routes: Routes = [
     {
         path: "home",
