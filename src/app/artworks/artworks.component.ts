@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ArtworkService} from '../../shared/services/artwork.service';
 import {WishlistService} from '../../shared/services/wishlist.service';
-import { MaterialModule } from 'src/material/material.module';
 
 @Component({selector: 'app-artworks', templateUrl: './artworks.component.html', styleUrls: ['./artworks.component.css']})
 export class ArtworksComponent implements OnInit {
