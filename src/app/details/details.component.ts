@@ -30,5 +30,6 @@ export class DetailsComponent {
 
     addToWishlist(artwork : any) {
         this.wishlistService.addToWishlist(artwork);
+        alert("Item added to Wishlist");
     }
 }

@@ -15,6 +15,7 @@ export class WishlistComponent implements OnInit {
     // Call the removeFromWishlist function
     removeFromWishlist(item : any) {
         this.wishlistService.removeFromWishlist(item);
+        alert("Item removed from wishlist");
     }
 
     // Method to clear the entire wishlist
