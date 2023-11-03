@@ -26,9 +26,10 @@
 }
 
 .artwork-details-image img {
-  max-width: 100%;
+  width: 10%;
   height: auto;
   margin-bottom: 20px;
+
 }
 
 .artwork-details-info {
