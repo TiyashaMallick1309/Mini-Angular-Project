@@ -77,6 +77,7 @@ export class ArtworksComponent implements OnInit { // Initialize class propertie
     addToWishlist(item : any) {
         if (this.wishlistService.wishlistItems.indexOf(item) === -1) {
             this.wishlistService.addToWishlist(item);
+            alert("Item added to Wishlist");
         }
     }
 }
